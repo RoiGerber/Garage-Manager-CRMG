@@ -15,7 +15,13 @@ a CRM (costumer relationship manager) project for garages.
   since the system can send SMS, it is interfacing with "Twilio".
   
 # So, what is it?
+
   the CRMG is a neat, comfortable, easy-to-use software for managing garages costumers.
+  
   each contact is a former costumer and has a simple contact page with his details: car model, date, latest problem etc.
+  
   the software has the ability to send SMSs with an alpha-numeric name.
-  the whole point is filtering
+  the whole point is filtering the contacts and sending them a costum sms,
+  for example: sending all the jeep owners that new spare parts arrived and they are sold in 50% discount
+  
+ 
