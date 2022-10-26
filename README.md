@@ -25,3 +25,7 @@ a CRM (costumer relationship manager) project for garages.
   for example: sending all the jeep owners that new spare parts arrived and they are sold in 50% discount
   
   the contacts and their details are organized in a Json file, therefore can easily be transfared to an excel table.
+
+# EXE
+  the project was made with python but has a portable exe file for easy running.
+  here i posted the whole projecct for you to see the code.
