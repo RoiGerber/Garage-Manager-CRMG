@@ -14,7 +14,7 @@ a CRM (costumer relationship manager) project for garages.
   it uses a not so popular environment and ui extension of python - "QT creator"
   since the system can send SMS, it is interfacing with "Twilio".
   
-# So, what is it?
+# So, what is it all about?
 
   the CRMG is a neat, comfortable, easy-to-use software for managing garages costumers.
   
@@ -24,4 +24,4 @@ a CRM (costumer relationship manager) project for garages.
   the whole point is filtering the contacts and sending them a costum sms,
   for example: sending all the jeep owners that new spare parts arrived and they are sold in 50% discount
   
- 
+  the contacts and their details are organized in a Json file, therefore can easily be transfared to an excel table.
