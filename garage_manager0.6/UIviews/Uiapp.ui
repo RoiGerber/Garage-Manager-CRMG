@@ -1,0 +1,1823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1018</width>
+    <height>802</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Garage Manger</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../icons/image.qrc">
+    <normaloff>:/image/logo.svg</normaloff>:/image/logo.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QWidget" name="widget_main" native="true">
+      <layout class="QVBoxLayout" name="THEAPPLICATIONCHILD">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="2">
+          <widget class="QFrame" name="verticalFrame_panal">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+
+background-color :rgb(35,35,35);
+font: 8.5pt &quot;Segoe UI&quot;;
+}
+</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <property name="spacing">
+             <number>6</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>12</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>17</number>
+            </property>
+            <item alignment="Qt::AlignHCenter">
+             <widget class="QPushButton" name="logo">
+              <property name="minimumSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+ }</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../icons/image.qrc">
+                <normaloff>:/image/logo.svg</normaloff>:/image/logo.svg</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="appname">
+              <property name="styleSheet">
+               <string notr="true">color : #858585 ;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="adduser">
+              <property name="minimumSize">
+               <size>
+                <width>250</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>250</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QRadioButton{ 
+background-color :  transparent;
+border : none ;
+Text-align:right;
+padding-right : 15px;
+color : #858585;
+ }
+
+QRadioButton:hover{
+background-color: rgb( 45, 45, 45);
+
+}
+QRadioButton:checked{
+background-color : rgb( 45, 45, 45); ;
+border-bottom: 0px;
+border-top: 0px;
+border-left: 0px;
+border-right: 3px  solid rgb( 174, 243, 231 );
+padding-right: 12px;
+}
+
+QRadioButton::indicator {
+                            width:                  0px;
+                            height:                 0px;
+                            border-radius:          0px;
+ }</string>
+              </property>
+              <property name="text">
+               <string>Add users      </string>
+              </property>
+              <property name="icon">
+               <iconset resource="../icons/image.qrc">
+                <normaloff>:/image/essential/add-line.svg</normaloff>:/image/essential/add-line.svg</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="users">
+              <property name="minimumSize">
+               <size>
+                <width>250</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>250</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QRadioButton{ 
+background-color :  transparent;
+border : none ;
+Text-align:right;
+padding-right : 15px;
+color : #858585;
+ }
+
+QRadioButton:hover{
+background-color: rgb( 45, 45, 45);
+
+}
+QRadioButton:checked{
+background-color : rgb( 45, 45, 45); ;
+border-bottom: 0px;
+border-top: 0px;
+border-left: 0px;
+border-right: 3px  solid rgb( 174, 243, 231 );
+padding-right: 12px;
+}
+
+QRadioButton::indicator {
+                            width:                  0px;
+                            height:                 0px;
+                            border-radius:          0px;
+ }</string>
+              </property>
+              <property name="text">
+               <string>Users      </string>
+              </property>
+              <property name="icon">
+               <iconset resource="../icons/image.qrc">
+                <normaloff>:/image/core/user-line.svg</normaloff>:/image/core/user-line.svg</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="sendsms">
+              <property name="minimumSize">
+               <size>
+                <width>250</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>250</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QRadioButton{ 
+background-color :  transparent;
+border : none ;
+Text-align:right;
+padding-right : 15px;
+color : #858585;
+ }
+
+QRadioButton:hover{
+background-color: rgb( 45, 45, 45);
+
+}
+QRadioButton:checked{
+background-color : rgb( 45, 45, 45); ;
+border-bottom: 0px;
+border-top: 0px;
+border-left: 0px;
+border-right: 3px  solid rgb( 174, 243, 231 );
+padding-right: 12px;
+}
+
+QRadioButton::indicator {
+                            width:                  0px;
+                            height:                 0px;
+                            border-radius:          0px;
+ }</string>
+              </property>
+              <property name="text">
+               <string>Send SMS to users      </string>
+              </property>
+              <property name="icon">
+               <iconset resource="../icons/image.qrc">
+                <normaloff>:/image/social/email-line.svg</normaloff>:/image/social/email-line.svg</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QStackedWidget" name="LESPAGES">
+           <property name="styleSheet">
+            <string notr="true">QScrollArea{
+border : none;
+}
+QWidget{
+background-color : rgb(45 ,45 ,45 );
+font: 8pt &quot;Segoe UI&quot;;
+color : #858585;
+
+}
+QScrollBar:horizontal {
+    border: transparent;
+    background: transparent;
+    height: 10px;
+    margin: 0px 21px 0 21px;
+      border-radius: 0px;
+}
+QScrollBar::handle:horizontal {
+    background: #2f3939;;
+    min-width: 25px;
+     border-radius: 5px
+}
+QScrollBar::add-line:horizontal {
+    border: none;
+    background: transparent;
+    width: 20px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal {
+    border: none;
+    background: transparent;
+    width: 20px;
+	border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+     background: none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+     background: transparent;
+}
+ QScrollBar:vertical {
+       border: none;
+    background: transparent;
+    width: 10px;
+    margin: 21px 0 21px 0;
+       border-radius: 0px;
+ }
+ QScrollBar::handle:vertical { 
+       background: #2f3939;;
+    	min-height: 25px;
+       border-radius: 5px;
+ }
+ QScrollBar::add-line:vertical {
+     border: none;
+    background: transparent;
+     height: 20px;
+       border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::sub-line:vertical {
+       border: none;
+    background: transparent;
+     height: 20px;
+       border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+     background: none;
+ }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
+
+
+
+
+
+
+
+
+QCheckBox{
+
+font: 10pt &quot;Segoe UI&quot;;
+color : white;
+
+}
+
+
+QPushButton{ 
+background-color: rgba(35, 35, 35 , 60 ) ;
+border-radius: 5px;
+color : #858585 ;
+border: 3px solid rgb(35, 35, 35);
+
+font: 12pt &quot;Segoe UI&quot;;
+ }
+QPushButton:hover{
+border: 3px solid #858585;
+}
+
+
+QPushButton:checked{
+background-color: rgb(34, 34, 34 ) ;
+color : white ; 
+}
+
+
+
+
+QSpinBox {
+   padding-right: 1px; /* make room for the arrows */
+	font: 12pt &quot;Segoe UI&quot;;
+color : white ;
+}
+
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right; /* position at the top right corner */
+    width: 25px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+    border-width: 0px;
+}
+
+
+QSpinBox::up-arrow {
+ image: url(&quot;:/image/UpArrow_white.png&quot;);
+    width: 20px;
+    height: 20px;
+  
+}
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right; /* position at bottom right corner */
+    width: 25px;
+    border-width: 1px;
+    border-top-width: 0;
+}
+
+
+QSpinBox::down-arrow {
+ image: url(&quot;:/image/DownArrow_white.png&quot;);
+    width: 20px;
+    height: 20px;
+ 
+}
+      
+
+QHeaderView::section {
+    background-color: #858585;
+    padding: 4px;
+    border: 1px solid rgb(45,45,45);
+	font: 10.5pt &quot;Segoe UI&quot;;
+	color : white ;
+}
+
+QTableWidget {
+    gridline-color: rgb(45,45,45);
+    font-size: 12pt;
+ 	background-color:  rgb(35,35,35);
+	 border: 1px solid rgb(45,45,45);
+	color : white
+   
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color:  rgb(35,35,35);
+    border: 1px solid rgb(45,45,45);
+}
+
+
+
+
+
+
+
+
+
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="page1">
+            <layout class="QGridLayout" name="gridLayout_2">
+             <property name="leftMargin">
+              <number>30</number>
+             </property>
+             <property name="topMargin">
+              <number>30</number>
+             </property>
+             <property name="rightMargin">
+              <number>30</number>
+             </property>
+             <property name="bottomMargin">
+              <number>30</number>
+             </property>
+             <item row="0" column="2">
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="1">
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="1">
+              <widget class="QWidget" name="general" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>400</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QWidget{
+background-color : rgb(35,35,35)  ;
+border-radius: 5px;
+}
+
+QLineEdit {
+background-color: #0A1414 ;
+border-radius: 0px;
+color : #858585 ;
+border: 1px solid #2f3939;
+padding-right: 12px;
+padding-top : 7px ;
+padding-bottom : 7px ;
+font: 10pt &quot;Segoe UI&quot;;
+}
+QLineEdit:hover {
+	border: 1px solid #858585 ;
+}
+QLineEdit:focus {
+	border: 1px solid  #858585;
+	color : white ;
+}
+
+
+QPushButton{ 
+background-color: #2f3939 ;
+border-radius: 0px;
+color : white ;
+border: none;
+	font: 10pt &quot;Segoe UI&quot;;
+padding-top : 7px ;
+padding-bottom : 7px ;
+padding-right : 27px ;
+padding-left : 27px ;
+ }
+QPushButton:hover{
+border: 1px solid white;
+padding : 4px ;
+}
+
+
+
+</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <property name="spacing">
+                 <number>20</number>
+                </property>
+                <property name="leftMargin">
+                 <number>20</number>
+                </property>
+                <property name="topMargin">
+                 <number>20</number>
+                </property>
+                <property name="rightMargin">
+                 <number>20</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>20</number>
+                </property>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout">
+                  <item>
+                   <widget class="QLineEdit" name="line_name">
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="icon_name">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+padding : 0px ;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../icons/image.qrc">
+                      <normaloff>:/image/core/user-line.svg</normaloff>:/image/core/user-line.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <item>
+                   <widget class="QLineEdit" name="line_phone">
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Phone number</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="icon_phone">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+padding : 0px ;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../icons/image.qrc">
+                      <normaloff>:/image/technology/mobile-phone-line.svg</normaloff>:/image/technology/mobile-phone-line.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <widget class="QLineEdit" name="line_carcompany">
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Car company</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="icon_company">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+padding : 0px ;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../icons/image.qrc">
+                      <normaloff>:/image/commerce/bank-line.svg</normaloff>:/image/commerce/bank-line.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                  <item>
+                   <widget class="QLineEdit" name="line_carmodel">
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Car model</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="icon_model">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+padding : 0px ;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../icons/image.qrc">
+                      <normaloff>:/image/essential/key-line.svg</normaloff>:/image/essential/key-line.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_6">
+                  <item>
+                   <widget class="QLineEdit" name="line_carcode">
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Car code</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="icon_code">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+padding : 0px ;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../icons/image.qrc">
+                      <normaloff>:/image/technology/bar-code-line.svg</normaloff>:/image/technology/bar-code-line.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_7">
+                  <item>
+                   <widget class="QLineEdit" name="line_notes">
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Notes</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="icon_notes">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+padding : 0px ;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../icons/image.qrc">
+                      <normaloff>:/image/essential/note-edit-line.svg</normaloff>:/image/essential/note-edit-line.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="button_addcostumer">
+                  <property name="text">
+                   <string>Add costumer</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page2">
+            <layout class="QGridLayout" name="gridLayout_8">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <property name="leftMargin">
+                <number>20</number>
+               </property>
+               <property name="topMargin">
+                <number>20</number>
+               </property>
+               <property name="rightMargin">
+                <number>20</number>
+               </property>
+               <property name="bottomMargin">
+                <number>20</number>
+               </property>
+               <item>
+                <widget class="QWidget" name="horizontalWidget" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">QWidget{
+background-color : rgb(35,35,35)  ;
+border-radius: 5px;
+}</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_search">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>37</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>200</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+background-color: #0A1414 ;
+border-radius: 0px;
+color : #858585 ;
+border: 1px solid #2f3939;
+padding-right: 12px;
+padding-top : 7px ;
+padding-bottom : 7px ;
+font: 10pt &quot;Segoe UI&quot;;
+}
+QLineEdit:hover {
+	border: 1px solid #858585 ;
+}
+QLineEdit:focus {
+	border: 1px solid  #858585;
+	color : white ;
+}
+</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="searchcombobox">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>37</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+border-radius: 0px;
+color :white  ;
+border: 0px solid #2f3939;
+padding-left: 22px;
+padding-right: 12px;
+padding-top : 7px ;
+padding-bottom : 7px ;
+font: 8pt &quot;Segoe UI&quot;;
+}
+
+QComboBox:editable {
+background-color : #2f3939  ;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background-color : #2f3939  ;
+}
+
+
+QComboBox:on { /* shift the text when the popup opens */
+   
+}
+
+QComboBox::drop-down {
+  	subcontrol-origin: padding;
+    subcontrol-position: top left;
+    border-left-width: 0px;
+    border-left-style: solid; /* just a single line */
+    
+}
+
+QComboBox::down-arrow {
+    image: url(:/image/DownArrow_white.png);
+ 	width: 16px; 
+ 	height: 16px;
+	padding-left : 20px;
+}
+
+QComboBox::down-arrow:on { 
+  
+}
+QComboBox:hover {
+	
+}</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Search by name </string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Search by car company </string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Search by car model </string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="icon_search">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+padding : 0px ;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../icons/image.qrc">
+                      <normaloff>:/image/core/search-line.svg</normaloff>:/image/core/search-line.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_3">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="filtersort">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>37</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+border-radius: 0px;
+color :white  ;
+border: 0px solid #2f3939;
+padding-left: 22px;
+padding-right: 12px;
+padding-top : 7px ;
+padding-bottom : 7px ;
+font: 8pt &quot;Segoe UI&quot;;
+}
+
+QComboBox:editable {
+background-color : #2f3939  ;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background-color : #2f3939  ;
+}
+
+
+QComboBox:on { /* shift the text when the popup opens */
+   
+}
+
+QComboBox::drop-down {
+  	subcontrol-origin: padding;
+    subcontrol-position: top left;
+    border-left-width: 0px;
+    border-left-style: solid; /* just a single line */
+    
+}
+
+QComboBox::down-arrow {
+    image: url(:/image/DownArrow_white.png);
+ 	width: 16px; 
+ 	height: 16px;
+	padding-left : 20px;
+}
+
+QComboBox::down-arrow:on { 
+  
+}
+QComboBox:hover {
+	
+}</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Name (a -z)</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Name (z-a)</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Date (Earliest)</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Date (Lastest)</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="icon_filter">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+padding : 0px ;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../icons/image.qrc">
+                      <normaloff>:/image/core/filter-grid-circle-line.svg</normaloff>:/image/core/filter-grid-circle-line.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QScrollArea" name="scrollArea">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>50</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_5">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="verticalLayout_2">
+                     <property name="rightMargin">
+                      <number>6</number>
+                     </property>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="page3">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+background-color: #0A1414 ;
+border-radius: 0px;
+color : #858585 ;
+border: 1px solid #2f3939;
+padding-left: 12px;
+padding-top : 7px ;
+padding-bottom : 7px ;
+font: 10pt &quot;Segoe UI&quot;;
+}
+QLineEdit:hover {
+	border: 1px solid #858585 ;
+}
+QLineEdit:focus {
+	border: 1px solid  #858585 ;
+	color : white ;
+}</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <property name="leftMargin">
+                <number>20</number>
+               </property>
+               <property name="topMargin">
+                <number>20</number>
+               </property>
+               <property name="rightMargin">
+                <number>20</number>
+               </property>
+               <property name="bottomMargin">
+                <number>20</number>
+               </property>
+               <item>
+                <widget class="QWidget" name="horizontalWidget_2" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">QWidget{
+background-color : rgb(35,35,35)  ;
+border-radius: 5px;
+}</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_search_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>37</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+background-color: #0A1414 ;
+border-radius: 0px;
+color : #858585 ;
+border: 1px solid #2f3939;
+padding-right: 12px;
+padding-top : 7px ;
+padding-bottom : 7px ;
+font: 8pt &quot;Segoe UI&quot;;
+}
+QLineEdit:hover {
+	border: 1px solid #858585 ;
+}
+QLineEdit:focus {
+	border: 1px solid  #858585;
+	color : white ;
+}
+</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="placeholderText">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="searchcombobox_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>37</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+border-radius: 0px;
+color :white  ;
+border: 0px solid #2f3939;
+padding-left: 22px;
+padding-right: 12px;
+padding-top : 7px ;
+padding-bottom : 7px ;
+font: 8pt &quot;Segoe UI&quot;;
+}
+
+QComboBox:editable {
+background-color : #2f3939  ;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background-color : #2f3939  ;
+}
+
+
+QComboBox:on { /* shift the text when the popup opens */
+   
+}
+
+QComboBox::drop-down {
+  	subcontrol-origin: padding;
+    subcontrol-position: top left;
+    border-left-width: 0px;
+    border-left-style: solid; /* just a single line */
+    
+}
+
+QComboBox::down-arrow {
+    image: url(:/image/DownArrow_white.png);
+ 	width: 16px; 
+ 	height: 16px;
+	padding-left : 20px;
+}
+
+QComboBox::down-arrow:on { 
+  
+}
+QComboBox:hover {
+	
+}</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Search by name </string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Search by car company </string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Search by car model </string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="icon_search_2">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+padding : 0px ;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../icons/image.qrc">
+                      <normaloff>:/image/core/search-line.svg</normaloff>:/image/core/search-line.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_4">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QComboBox" name="filtersort_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>37</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QComboBox {
+border-radius: 0px;
+color :white  ;
+border: 0px solid #2f3939;
+padding-left: 22px;
+padding-right: 12px;
+padding-top : 7px ;
+padding-bottom : 7px ;
+font: 8pt &quot;Segoe UI&quot;;
+}
+
+QComboBox:editable {
+background-color : #2f3939  ;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background-color : #2f3939  ;
+}
+
+
+QComboBox:on { /* shift the text when the popup opens */
+   
+}
+
+QComboBox::drop-down {
+  	subcontrol-origin: padding;
+    subcontrol-position: top left;
+    border-left-width: 0px;
+    border-left-style: solid; /* just a single line */
+    
+}
+
+QComboBox::down-arrow {
+    image: url(:/image/DownArrow_white.png);
+ 	width: 16px; 
+ 	height: 16px;
+	padding-left : 20px;
+}
+
+QComboBox::down-arrow:on { 
+  
+}
+QComboBox:hover {
+	
+}</string>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string>Name (a -z)</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Name (z-a)</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Date (Earliest)</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Date (Lastest)</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="icon_filter_2">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+padding : 0px ;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../icons/image.qrc">
+                      <normaloff>:/image/core/filter-grid-circle-line.svg</normaloff>:/image/core/filter-grid-circle-line.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="horizontalWidget" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">QWidget{
+background-color : rgb(35,35,35)  ;
+border-radius: 5px;
+}</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_9">
+                  <property name="leftMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>9</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>49</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>9</number>
+                  </property>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_message">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>37</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+background-color: #0A1414 ;
+border-radius: 0px;
+color : #858585 ;
+border: 1px solid #2f3939;
+padding-right: 12px;
+padding-top : 7px ;
+padding-bottom : 7px ;
+font: 8pt &quot;Segoe UI&quot;;
+}
+QLineEdit:hover {
+	border: 1px solid #858585 ;
+}
+QLineEdit:focus {
+	border: 1px solid  #858585;
+	color : white ;
+}
+</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="placeholderText">
+                     <string>Entre the SMS here .. </string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="icon_message">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{ 
+background-color : none;
+border:none;
+padding : 0px ;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="../icons/image.qrc">
+                      <normaloff>:/image/social/chat-bubble-outline-badged.svg</normaloff>:/image/social/chat-bubble-outline-badged.svg</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="horizontalSpacer_5">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="sendmessagebutton">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>37</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">
+QPushButton{ 
+background-color: #2f3939 ;
+border-radius: 0px;
+color : white ;
+border: none;
+	font: 8pt &quot;Segoe UI&quot;;
+padding-top : 7px ;
+padding-bottom : 7px ;
+padding-right : 27px ;
+padding-left : 27px ;
+ }
+QPushButton:hover{
+border: 1px solid white;
+padding : 4px ;
+}
+
+</string>
+                    </property>
+                    <property name="text">
+                     <string>Send SMS</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_10">
+                 <item>
+                  <spacer name="horizontalSpacer_7">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="select_all">
+                   <property name="styleSheet">
+                    <string notr="true">color : #858585;</string>
+                   </property>
+                   <property name="text">
+                    <string>Select all</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_6">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Fixed</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="costumersselected">
+                   <property name="styleSheet">
+                    <string notr="true">font-size : 14px ; </string>
+                   </property>
+                   <property name="text">
+                    <string>0 Costumers selected </string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Fixed</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QScrollArea" name="scrollArea_2">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>50</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_6">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="verticalLayout_4">
+                     <property name="rightMargin">
+                      <number>6</number>
+                     </property>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../icons/image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
